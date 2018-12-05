@@ -1,0 +1,9 @@
+Q1.
+Current return address is 0xb7e21637 
+And the current memory address where return adress is located is 0xbffff01c, which is right after the ebp register (which we want to override).
+
+Q2.
+We can executel shellcode function by inputing this value.
+char buf[OFFSET] = "12341234123412341234\x9b\x84\x04\x08";
+Where first 12 values are random symbols (to skip buffer and other variables or ergisters), and last 4 are address of shellcode in reverse order (cause of little-endian). 
+

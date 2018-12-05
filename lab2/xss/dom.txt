@@ -1,0 +1,5 @@
+<button  size="0" id="haha" onfocus="alert('hello'); document.getElementById('haha').blur(); document.getElementById('haha').style.display='none'"
+ autofocus></button>
+
+
+

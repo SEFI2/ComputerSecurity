@@ -1,0 +1,4 @@
+# Exercise; individual scores; total; adjusted (delay, etc)
+E1;;0;0
+E2;1,x,2,x,3,x,4,x;x;x
+E3;1,x;x;x

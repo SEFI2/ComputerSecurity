@@ -1,0 +1,1 @@
+It was possible, because the server doesn't check and distingush the post with the script. And the script tag is rendered as the script.

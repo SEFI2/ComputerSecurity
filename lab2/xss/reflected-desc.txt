@@ -1,0 +1,1 @@
+It is almost the same solution as the first. It was possible, because the url's name parameters requests from the server the page with that parameter embedded to the html page. So if you pass through an URL a script, it will give back the page with script embedded.

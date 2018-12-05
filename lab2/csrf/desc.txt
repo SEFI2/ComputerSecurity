@@ -1,0 +1,1 @@
+It does imitate the form from /victim/posts and submits the form automatically after document is loaded (by using onload callback). 

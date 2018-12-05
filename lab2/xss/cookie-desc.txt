@@ -1,0 +1,1 @@
+It was almost the same problem as 'stored', so the reason I was able to execute the script same as 'stored' problem. I wrote the script using XMLHttpRequest, which sends the cookie (from document.cookie) to the attacker's server

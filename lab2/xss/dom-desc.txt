@@ -1,0 +1,1 @@
+From my analysis and after a lot of failing trials, I understood that embedded code is not executed at all, but only the tag and its attributes are executed. So I decided to use autofocus and onfocus attributes, where first one makes an element focused and executes the code, which is inside onfocus attribute.  

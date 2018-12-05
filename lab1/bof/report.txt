@@ -1,0 +1,20 @@
+Q1.
+The problem is that program doesn't check the size of a buf array.
+So here it can override unintented memory address.
+> buf[i] = *c;
+
+Q2.
+Random values more with length more than 4, for example `kadyrbek`
+
+Q3.
+We can crash it by giving very long inputs. Cause it goes way beyond the local register, by overriding critical registers or return adresses. Which causes program to behave unexpected.
+
+Q4.
+We can modify driver.c like this and append \x01 to the end, which is equal to 1 in hexadecimal. 
+char* argv2[] = {"bof", "abab\x01", NULL};
+
+Q5.
+It is not possible, since as long as the our address has \x00 (which is NULL) it breaks the while loop, thus by not overriding anythin.
+
+ 
+

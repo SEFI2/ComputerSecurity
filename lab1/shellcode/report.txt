@@ -1,0 +1,14 @@
+Q1. 
+Yes! It executes the assembler code (shellcode.S) , which is similar to shellcode.c. The code itself tries to access and execute the `/bin/sh` program(which is by itself a `shell`) by using the `execve` function.
+
+Q2.
+We can find the address of the buffshell ( by using gdb `p &bufshell`)
+and using this address for return address. 
+So at the end.
+char buf[(OFFSET+5)] = "12345678as\xa2\xeb\xff\xbf";
+	
+
+Q3.
+We can use the converted hexadecimal representation of the assembler code (shellcode.S) and writing it in reverse order.
+
+

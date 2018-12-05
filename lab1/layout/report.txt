@@ -1,0 +1,29 @@
+Q1.
+
+`0804b000-0806c000 [heap]`
+and 
+`bffdf000-c0000000 [stack]`
+
+We can find them by reading the rightmost column, which describes the heap and stack and where leftmost describes the range of addresses.
+
+
+
+Q2.
+We can filter out them by the permission access. We know that Code data should be only readable and the global variables only readable and writable.
+We located them 
+
+Code address range:
+08049000-0804a000 r--p
+Global Variables address range:
+0804a000-0804b000 rw-p
+
+Q3.
+The region with rw-p for .data/.bss/heap/stack
+The region with r--p for .rodata
+
+Q4.
+`layout-insecure` has more permisions for memory regions, which could lead to vulnerability holes.
+
+Q5.
+Aftering turning on ASLR, I observed that execution of ./layout displays different address range after each execution.
+

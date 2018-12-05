@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang = "en"><body>
+    <h1>Please leave a message to other visitors</h1>
+    <div id="echo-out">
+</div>
+		
+    <script>	
+      function drop(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('drop');
+      }
+      function echo() {
+        document.getElementById('echo-out').innerHTML =
+        document.getElementById('new-posting').value;
+        console.log('echo');
+      }
+      document.getElementById('echo-out').innerHTML = unescape(self.location.hash.substr(1));
+      console.log('test');
+    </script>
+
+    <form style="width=500px; height=200px"
+          onsubmit="drop(event);echo()">
+      <input type="text" 
+             style="width=400px; height=150px" 
+             id="new-posting"
+             value="Write your post here"
+             onfocus="document.getElementById('new-posting').value=''"
+             onsubmit="drop(event);echo()">
+      <input id="button" type="submit" value="submit">
+    </form>
+
+
+  </body></html>
