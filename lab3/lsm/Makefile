@@ -17,7 +17,7 @@ first-build-kernel:
 		make ARCH=i386 oldconfig && \
 		make -j`nproc` deb-pkg && \
 		cd .. && \
-		sudo dpkg -i *.deb && 
+		sudo dpkg -i *.deb
 
 rebuild-kernel:
 	rm -f *.deb && \

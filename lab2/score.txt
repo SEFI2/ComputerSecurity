@@ -1,4 +1,9 @@
 # Exercise; individual scores; total; adjusted (delay, etc)
 E1;;0;0
-E2;1,x,2,x,3,x,4,x;x;x
-E3;1,x;x;x
+E2;1,15,2,20,3,15,4,20;70;70
+E3;1,25;25;25
+# E2-Q4: Browser prevents the cross-origin access -> checked.
+# E2-Q3: Does it work automatically?
+# -> In fact the missing 5 pts from E2-Q3 is for not providing a URL, so the
+# score doesn't change though your attack will run automatically without the
+# victim's help.

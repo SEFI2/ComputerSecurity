@@ -1,0 +1,16 @@
+The following feedback includes only the portions that you pushed something for.
+I found that the scores are not associated with the problems. Will fix them
+soon.
+
+1. 
+  Q2: great. you will get the full score
+2. 
+  Q1: count doesn't seem to work. Let me know if it should work.
+  Q2: prevent doesn't seem to work. The module is not preventing open nor
+  - I thing the reason why the module do not work is that you hardcoded your
+  name, which seem to be your VM's account name. Please use vagrant as the user
+  name which is the default one. Otherwise your code appears to work.
+3.
+  Q1: This also does not work. One reason is you user id but there is another.
+  In fact, you should hook unlinkat instead of unlink.
+

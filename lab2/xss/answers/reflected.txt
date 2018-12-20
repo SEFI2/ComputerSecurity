@@ -1,0 +1,1 @@
+http://example.com:7777/reflected?name=<script>alert('Hello')</script>

@@ -7,10 +7,18 @@
 #include <linux/thread_info.h>
 
 MODULE_LICENSE("GPL");
-static int file_device_init(void) {
-
-    struct file* f;
+static int file_device_init(void) { 
+    char *filename = "/home/kadyr/temp";
+	
+    struct file* file;
     const struct file_operations* fop;
+		
+    if ((file = filp_open(filename, O_RDONLY,0)) == NULL)
+	    return;
+	fop = file->f_path.dentry->d_inode->i_fop;
+	//printk("INIT FUNCTION HAHAH:\n");
+	printk("open:%p release:%p read:%p write:%p", fop->open, fop->release, fop->read, fop->write);
+
     return 0;
 }
 

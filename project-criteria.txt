@@ -1,0 +1,27 @@
+# Syntax: <label>. (<portion>) Criteria
+Proposal
+1. (10) The motivation is stated clearly.
+2. (10) The goal is stated clearly.
+3. (10) The plan is concrete enough.
+
+Deliverable
+4. (30) The project achievement is challenging.
+5. (30) The others can easily reproduce the reported result easily.
+6. (20) The proposed goal is reasonably achieved.
+
+Presentation
+7. (10) The presentation respects the time limit.
+8. (15) It is easy to catch the motivation, goal and the concrete result.
+
+Report
+9. (15) It is easy to catch the motivation, goal and the concrete result.
+
+# Total: 150 (15% of the overall)
+# Notes.
+# 4 - Plan to give 30 only to 1-2 teams, 10 to most teams.
+# 5 - Gets 30 only if only a handful of commands are required, with the
+# consideration of the project contents. Gets 15 if the project doesn't include 
+# any implementations or tooling.
+# 6 - Full achieved: 20, reasonably stated the progress - 10
+# 7 - submitted: 5 / slightly longer: 8
+# 9 - submitted: 5
